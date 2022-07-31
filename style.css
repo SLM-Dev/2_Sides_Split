@@ -7,7 +7,7 @@
   --left-btn-hover-color: rgb(226, 18, 18);
   --right-btn-hover-color: rgb(221, 31, 228);
   --hover-width: 75%;
-  --other-width: 25% ; 
+  --other-width: 25%; 
 }
 /* fix color not changing for right split */
 * {
@@ -50,6 +50,7 @@
     padding: 1.5rem;
 
   }
+
 
   .split.left .btn:hover{
     background-color: var(--left-btn-hover-color);
@@ -109,20 +110,20 @@
   
     /* On hover effects */
     .hover-left .left {
-      width: var (--hover-width);
+      width: var(--hover-width);
     }
 
     
     .hover-left .right {
-      width: var (--hover-width);
+      width: var(--hover-width);
     }
 
 
     .hover-right .right {
-      width: var (--hover-width);
+      width: var(--hover-width);
     }
 
     
     .hover-right .left {
-      width: var (--other-width);
+      width: var(--other-width);
     }
