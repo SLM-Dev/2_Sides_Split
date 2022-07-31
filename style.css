@@ -53,7 +53,10 @@
   }
 
 
-  .split.right, .split.left, .split.right::before, .split.left::before {
+  .split.right,
+   .split.left, 
+   .split.right::before,
+    .split.left::before {
     transition: all var(--speed) ease-in-out;
   }
 
@@ -108,6 +111,8 @@
   }
 
   .split.right::before {
+    content: ' ';
+    position: absolute;
     width: 100%;
     height: 100%;
     background-color: var(--right-bg-color);
@@ -121,7 +126,7 @@
 
     
     .hover-left .right {
-      width: var(--hover-width);
+      width: var(--other-width);
     }
 
 
