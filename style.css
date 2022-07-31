@@ -8,6 +8,7 @@
   --right-btn-hover-color: rgb(221, 31, 228);
   --hover-width: 75%;
   --other-width: 25%; 
+  --speed: 1000ms;
 }
 /* fix color not changing for right split */
 * {
@@ -49,6 +50,11 @@
     width: 15rem;
     padding: 1.5rem;
 
+  }
+
+
+  .split.right, .split.left, .split.right::before, .split.left::before {
+    transition: all var(--speed) ease-in-out;
   }
 
 
@@ -126,4 +132,21 @@
     
     .hover-right .left {
       width: var(--other-width);
+    }
+
+    /* Media Mobile responsive  */
+    
+    
+
+    @media (max-width: 800px) {
+      
+      h1 {
+        font-size: 2rem;
+        top: 20%;
+      }
+
+      .btn {
+        padding: 0.5rem;
+        width: 10rem;
+      }
     }
